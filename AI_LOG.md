@@ -287,6 +287,7 @@ Handing an evaluator a project where they can type one command (`./verify_system
 Keep Mocking Clean:
 Ensure asynchronous mocking primitives (such as `httpx.AsyncClient` or equivalent async mocks) are used if the background worker leverages asynchronous execution. Standard synchronous mocks may block or fail within asynchronous FastAPI workflows.
 ```
+This prompt produced an automated testing suite covering API validation, asynchronous worker behavior, mocked network conditions, edge-case handling, and end-to-end system verification, improving the overall reliability of the project.
 
 # 6. Reflection
 
@@ -298,22 +299,6 @@ The project demonstrates AI being used as a productivity multiplier rather than 
 
 ---
 
-# Prompt 2 — Testing & Quality Assurance
 
-After the core application was completed, the following prompt was used to generate a comprehensive testing strategy:
-
-> **Role:** You are an expert Principal QA Automation Engineer and Lead SDET.
->
-> **Objective:** Create a production-grade testing framework for the FastAPI + React + Docker based Uptime Monitor MVP.
->
-> **Requirements (Summary):**
-> - Pytest fixtures
-> - API integration tests
-> - Background worker unit tests
-> - Mock HTTP responses
-> - DNS failure simulation
-> - Concurrent ping validation
-> - End-to-end verification script
-> - README testing documentation
 
 This prompt produced an automated testing suite covering API validation, asynchronous worker behavior, mocked network conditions, edge-case handling, and end-to-end system verification, improving the overall reliability of the project.
